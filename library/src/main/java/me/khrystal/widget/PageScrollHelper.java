@@ -108,7 +108,7 @@ public class PageScrollHelper {
             }
 
             if (mAnimator == null) {
-                mAnimator = new ValueAnimator().ofInt(startPoint, endPoint);
+                mAnimator = ValueAnimator.ofInt(startPoint, endPoint);
                 mAnimator.setDuration(300);
                 mAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                     @Override
